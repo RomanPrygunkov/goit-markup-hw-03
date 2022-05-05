@@ -13,6 +13,9 @@ body {
     letter-spacing: 0.03em;
     color: var(--links-gray);
 }
+img {
+    display: block;
+}
 
 .header-border {
     border-bottom: 1px solid #ECECEC;
@@ -34,20 +37,18 @@ li {
     line-height: 1.2;
     color: var(--selected-color);
     text-decoration: none;
-    
 }
+.logo-footer {
+    
+    margin-bottom: 20px;
 
+}
 
 
 /* Footer style */
 .footer-style {
     background-color: #2F303A;
     font-style: inherit;
-}
-.footer-section {
-padding-top: 60px;
-padding-bottom: 60px;
-
 }
 
 /* Separate color for logo in head*/
@@ -72,6 +73,7 @@ letter-spacing: 0.02em;
 color: var(--main-black-color);
 text-decoration: none;
 }
+
 .nav-link:hover, 
 .nav-link:focus {
     color: var(--selected-color);
@@ -101,6 +103,7 @@ text-decoration: none;
 
 /* Footer contacts */
 .footer-contacts-link {
+display: block;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -176,7 +179,7 @@ margin-bottom: 94px;
 /* Fonts for h2 Index */
 .secondary-header { 
 
-padding-bottom: 50px; 
+margin-bottom: 50px; 
 font-size: 36px;
 line-height: 42px;
 text-align: center;
@@ -211,13 +214,30 @@ font-size: 16px;
 color: var(--main-black-color);
 }
 
+/* Fonts for p Porfolio */
+.portfolio-descript {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--links-gray);
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
 /* Fonts for h3 Porfolio */
 .portfolio-title {
+padding-top: 20px;
+padding-left: 24px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--main-black-color);
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;;
 }
 
 /* Fonts for p Section 2 */
@@ -234,14 +254,7 @@ font-weight: 400;
 font-size: 16px;
 }
 
-/* Fonts for p Porfolio */
-.portfolio-descript {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-color: var(--links-gray);
 
-}
 
 /* Cards in Porfolio */
 
@@ -264,6 +277,10 @@ color: var(--links-gray);
 }
 .custom-top-padding {
     padding-top: 50px;
+}
+.footer-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 /* GEOMETRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .container {
@@ -299,47 +316,36 @@ color: var(--links-gray);
 /* Section 2 formating */
 
 .specification-list {
-    /* margin-top: -30px;
-    margin-left: -30px; */
     display: flex;
     flex-wrap: wrap;  
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .specification-list .item {
-    /* flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px; */
-   max-width: 270px;
+    max-width: 270px;
     
 }
-
+.specification-list .item:nth-child(n+5) {
+    margin-top: 30px;
+}
 /* Section 3 formating */
 .activity-list {
-    margin-top: -30px;
-    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.activity-list .item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+.activity-list .item:nth-child(n+4) {
+margin-top: 30px;
 }
 
 /* Section 4 formating */
 .staff-list {
-    margin-top: -30px;
-    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .staff-style {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-
     text-align: center;
     background: var(--primary-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -347,7 +353,9 @@ color: var(--links-gray);
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
+.staff-style:nth-child(n+5) {
+margin-top: 30px;
+}
 
 
 .filter-list {
@@ -374,7 +382,6 @@ justify-content: center;
     text-align: center;
     
     border-style: none;
-    border: 1px solid transparent;
     border-radius: 4px;
     background-color: #F5F4FA;
     color: var(--main-black-color);
@@ -393,18 +400,12 @@ justify-content: center;
 
 /* Portfolio formating */
 .portfolio-list {
-margin-top: -30px;
-margin-left: -30px;
 display: flex;
 flex-wrap: wrap;
+gap: 30px;
 }
 .portfolio-cards {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-
-    border-bottom: 1px solid #EEEEEE; 
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 .test {
     background-color: #188CE8;
