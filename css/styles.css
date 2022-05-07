@@ -13,12 +13,35 @@ body {
     letter-spacing: 0.03em;
     color: var(--links-gray);
 }
-img {
-    display: block;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.header-border {
-    border-bottom: 1px solid #ECECEC;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    /* outline: 1px solid red; */
+}
+
+.no-top-padding {
+    padding-top: 0;
+    padding-bottom: 94;
+}
+
+.no-bot-padding {
+    padding-bottom: 0;
+}
+
+.custom-top-padding {
+    padding-top: 50px;
+}
+
+img {
+    display: block;
 }
 
 h1,h2,h3,p,ul {
@@ -39,20 +62,11 @@ li {
     text-decoration: none;
 }
 .logo-footer {
-    
     margin-bottom: 20px;
-
-}
-
-
-/* Footer style */
-.footer-style {
-    background-color: #2F303A;
-    font-style: inherit;
 }
 
 /* Separate color for logo in head*/
-.logohead-second-color {  
+.logohead-second-color {
     color: #000000;
 }
 
@@ -61,6 +75,53 @@ li {
     display: inline-block;
     margin-bottom: 20px;
     color: var(--primary-text-color);
+}
+
+.header-hide {
+    display: none;
+}
+
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-header {
+    display: inline-block;
+    padding-top: 200px;
+    text-align: center;
+    align-items: center;
+    width: 696px;
+    margin-bottom: 30px;
+}
+
+.main-header-bgc {
+    text-align: center;
+    align-items: center;
+    background-color: #2F303A;
+}
+
+/* Header formating */
+.header-nav {
+    display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.head-contacts {
+    margin-left: auto;
+    display: flex;
+}
+
+.head-contacts .item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.header-formating {
+    display: flex;
+    align-items: center;
 }
 
 /* Fonts for head list */
@@ -82,9 +143,7 @@ text-decoration: none;
     color: var(--selected-color);
 }
 
-.header-hide {
-    display: none;
-}    
+   
 /* Head contacts */
 .head-contacts-link {
 padding-top: 32px;
@@ -101,43 +160,16 @@ text-decoration: none;
     color: var(--selected-color);
 }
 
-/* Footer contacts */
-.footer-contacts-link {
-display: block;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
-}
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-    color: var(--selected-color);
-}
-/* Adress */
-.adress {
-    margin-bottom: 9px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-
-
-
-
-
 /* Fonts for h1 */
 
-h1{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--primary-text-color);
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
 }
 
 .button-order {
@@ -154,209 +186,99 @@ color: var(--primary-text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
-   
+
 }
+
 .button-order:hover,
 .button-order:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: #188CE8;
-
-}
-
-.main-header {
-margin-bottom: 30px;
-}
-
-.main-header-bgc {
-text-align: center;
-background-color: #2F303A;
-}
-/* Field of activity section Index */
-.field-activity-section {
-margin-bottom: 94px;
 }
 
 /* Fonts for h2 Index */
-.secondary-header { 
-
-margin-bottom: 50px; 
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-color: var(--main-black-color);
+.secondary-header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--main-black-color);
 }
-
-
-
 
 /* Fonts for h3 Section 2 in Index */
 .specifications-header-style {
-margin-bottom: 10px;
-font-size: 14px;    
-text-transform: uppercase;
-color: var(--main-black-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--main-black-color);
 }
-
-/* Staff section Index */
-.staff-section {
-padding-top: 94px;
-padding-bottom: 94px;
-background-color: #F5F4FA;
-    
-}
-
-/* Fonts for h3 Section 4 */
-.staff-title {
-margin-top: 30px;
-margin-bottom: 10px;
-font-weight: 500;
-font-size: 16px;
-color: var(--main-black-color);
-}
-
-/* Fonts for p Porfolio */
-.portfolio-descript {
-    padding-left: 24px;
-    padding-bottom: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--links-gray);
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-/* Fonts for h3 Porfolio */
-.portfolio-title {
-padding-top: 20px;
-padding-left: 24px;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--main-black-color);
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;;
-}
-
 /* Fonts for p Section 2 */
 .specification-title {
-font-weight: 400;
-line-height: 1.71;
-color: var(--links-gray);
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--links-gray);
 }
-
-/* Fonts for p Section 4 */
-.staff-descript {
-padding-bottom: 30px;    
-font-weight: 400;
-font-size: 16px;
-}
-
-
-
-/* Cards in Porfolio */
-
-
-.portfolio-cards a {
-    text-decoration: none;
-}
-
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.no-top-padding {
-    padding-top: 0;
-    padding-bottom: 94;
-}
-.no-bot-padding {
-    padding-bottom: 0;
-}
-.custom-top-padding {
-    padding-top: 50px;
-}
-.footer-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-/* GEOMETRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-    /* outline: 1px solid red; */
-
-}
-/* Header formating */
-.header-nav{
-    display: flex;
-}
-.header-nav-item:not(:last-child) {
-    margin-right: 50px;
-}
-.head-contacts {
-    margin-left: auto;
-    display: flex;
-}
-.head-contacts .item:not(:last-child) {
-   margin-right: 50px; 
-
-}
-.header-formating {
-    display: flex;
-    align-items: center;
-}
-
-
 /* Section 2 formating */
 
 .specification-list {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .specification-list .item {
     max-width: 270px;
-    
+
 }
+
 .specification-list .item:nth-child(n+5) {
     margin-top: 30px;
 }
+
+/* Field of activity section Index */
+.field-activity-section {
+    margin-bottom: 94px;
+}
+
 /* Section 3 formating */
 .activity-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .activity-list .item:nth-child(n+4) {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
-/* Section 4 formating */
-.staff-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Staff section Index */
+.staff-section {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+
 }
 
-.staff-style {
-    text-align: center;
-    background: var(--primary-text-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-.staff-style:nth-child(n+5) {
-margin-top: 30px;
+/* Fonts for h3 Section 4 */
+.staff-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-black-color);
 }
 
+/* Fonts for p Section 4 */
+.staff-descript {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.staff-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
 .filter-list {
  display: flex;
@@ -370,9 +292,7 @@ justify-content: center;
 /* Filter Buttons styles */
 .filter-buttons-styles {
     display: inline-block;
-   
-    
-    padding-top: 6px;
+   padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
@@ -380,7 +300,6 @@ justify-content: center;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    
     border-style: none;
     border-radius: 4px;
     background-color: #F5F4FA;
@@ -404,9 +323,80 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 }
+
+/* Fonts for p Porfolio */
+.portfolio-descript {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--links-gray);
+
+
+}
+
+/* Fonts for h3 Porfolio */
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-black-color);
+}
+
+.portfolio-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+/* Cards in Porfolio */
 .portfolio-cards {
 box-sizing: border-box;
 }
+
+.portfolio-cards a {
+    text-decoration: none;
+}
+
+/* Footer style */
+.footer-style {
+    background-color: #2F303A;
+    font-style: inherit;
+}
+
+/* Footer contacts */
+.footer-contacts-link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--selected-color);
+}
+.footer-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Adress */
+.adress {
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
 .test {
     background-color: #188CE8;
 }
